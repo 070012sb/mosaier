@@ -1,0 +1,88 @@
+@charset "utf-8";
+html,body{
+    min-height: 3000px;
+}
+.bgGray{
+    height: 36px; 
+    background:#f4f4f4;  
+}
+.bgGray .main{
+    width: 1120px;
+    height: 36px;
+    box-sizing: border-box;
+    padding-top:8px;  
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bgGray .main .head-msg{
+    height: 28px;
+    width: 600px;
+    position: relative;
+    float: left;
+
+}
+.head-msg img{
+    width: 18px;
+    height: 18px;
+}
+
+.head-msg li {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    overflow: hidden;
+}
+.head-msg li a {
+    width: 100%;
+    height: 24px;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.navigation{
+    width: 500px;
+    height: 26px;
+    float: right;
+}
+.navigation li{
+    margin: 0px 10px;
+    height: 26px;
+    text-align: right;
+    float: right;
+    font-size: 14px;
+} 
+ .settwo{box-shadow:0 0 10px #ccc;}
+.clicke .videos .redtwo{color:#d92a4b;}
+.breed .block{display: block}
+.breed .none{display: none}
+.bg{background:#d92a4b;}
+.main{width: 1120px;margin: 0 auto;}
+.banner{width: 1120px;height: 102px;box-sizing: border-box;padding-top:20px;margin: 0 auto;position: relative;}
+.search{background: url(../img/1.jpg) no-repeat 240px 8px;width: 296px;height: 46px;border-radius: 24px ;position: absolute;top: 38px;right: 0px;border: 2px solid #ccc;text-indent:2em;}
+.headNav {border-bottom: 2px solid #333;position: relative;height: 44px;z-index: 98;width: 100%;background: white;}
+.headNav ul{width: 1120px;margin: 0 auto;height: 44px;text-align: center;}
+.headNav ul li{float: left;text-align: center;height: 44px;line-height: 44px;}
+.headNav ul li a{font-size: 16px;padding: 0 30px;}
+.state{display:none; position: absolute;min-height: 150px;width: 100%;left: 0px;margin-top: 2px;background: white;}
+.state .wine{width: 1120px;min-height: 100px;margin: 0 auto;overflow: hidden;}
+.winer{width: 520px;min-height: 100px;overflow: hidden;text-align: left;position: relative;float: left;}
+.winer h3{border-bottom: 1px solid #eee;font-weight: 700;text-align: left;margin-bottom: 15px;font-size: 14px;margin-top: 16px;margin-left: 34px;}
+.state .wine .winer i{margin-left: 34px;font-size: 40px;display: block;}
+.state .wine p {line-height: 24px;left: 85px;min-height:50px;position: absolute;top:72px;}
+.state .wine p a{padding: 10px 10px;font-size: 14px;}
+.winertwo{width: 520px;min-height: 100px;overflow: hidden;text-align: left;position: relative;float: right;}
+.winertwo h3{border-bottom: 1px solid #eee;font-weight: 700;text-align: left;margin-bottom: 15px;font-size: 14px;margin-top: 16px;margin-left: 34px;}
+.winertwo i{font-size: 22px;margin-left: 25px;}
+.food{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.fooder{background: white;width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px 45px;}
+.fooder p{float: left;margin-right:50px; }
+.fooder p i{font-size: 50px;}
+.find{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.finder{width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px;padding-left: 490px;background: white;}
+.finder p{float: left;margin-right:50px; }
+.finder p i{font-size: 50px;}
+.brand{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.brander{background: white;width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px;padding-left: 650px;}
+.brander p{float: left;margin-right:50px; }
+.brander p i{font-size: 50px;}
+

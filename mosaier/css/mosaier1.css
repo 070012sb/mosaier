@@ -1,0 +1,191 @@
+ @charset "utf-8";
+.bgGray{
+    height: 36px; 
+    background:#f4f4f4;  
+}
+.bgGray .main{
+    width: 1120px;
+    height: 36px;
+    box-sizing: border-box;
+    padding-top:8px;  
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bgGray .main .head-msg{
+    height: 28px;
+    width: 600px;
+    position: relative;
+    float: left;
+
+}
+.head-msg img{
+    width: 18px;
+    height: 18px;
+}
+
+.head-msg li {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    overflow: hidden;
+}
+.head-msg li a {
+    width: 100%;
+    height: 24px;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.navigation{
+    width: 500px;
+    height: 26px;
+    float: right;
+}
+.navigation li{
+    margin: 0px 10px;
+    height: 26px;
+    text-align: right;
+    float: right;
+    font-size: 14px;
+} 
+ .settwo{box-shadow:0 0 10px #ccc;}
+.clicke .videos .redtwo{color:#d92a4b;}
+.breed .block{display: block}
+.breed .none{display: none}
+.bg{background:#d92a4b;}
+.js-t div ul{float: left;overflow: hidden;}
+.js-t div ul li{float: left;margin: 12px;text-align: center;background: #fff;width: 256px;}
+.js-t div ul img{width: 256px;cursor: pointer;}
+.js-t div ul li h3{cursor: pointer; margin: 10px 10px 5px;font-size: 15px;display: block;line-height: 24px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.js-t div ul li h4{height: 21px;color: #999;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;}
+.js-t div ul li h5{font-weight: 400;color: #d92a4b;font-size: 14px;margin: 15px auto;border-top: 1px solid #eee;width: 60%;padding-top: 10px;}
+.main{width: 1120px;margin: 0 auto;}
+.banner{width: 1120px;height: 102px;box-sizing: border-box;padding-top:20px;margin: 0 auto;position: relative;}
+.search{background: url(../img/1.jpg) no-repeat 240px 8px;width: 296px;height: 46px;border-radius: 24px ;position: absolute;top: 38px;right: 0px;border: 2px solid #ccc;text-indent:2em;}
+.headNav {border-bottom: 2px solid #333;position: relative;height: 44px;z-index: 98;width: 100%;background: white;}
+.headNav ul{width: 1120px;margin: 0 auto;height: 44px;text-align: center;}
+.headNav ul li{float: left;text-align: center;height: 44px;line-height: 44px;}
+.headNav ul li a{font-size: 16px;padding: 0 30px;}
+.state{display:none; position: absolute;min-height: 150px;width: 100%;left: 0px;margin-top: 2px;background: white;}
+.state .wine{width: 1120px;min-height: 100px;margin: 0 auto;overflow: hidden;}
+.winer{width: 520px;min-height: 100px;overflow: hidden;text-align: left;position: relative;float: left;}
+.winer h3{border-bottom: 1px solid #eee;font-weight: 700;text-align: left;margin-bottom: 15px;font-size: 14px;margin-top: 16px;margin-left: 34px;}
+.state .wine .winer i{margin-left: 34px;font-size: 40px;display: block;}
+.state .wine p {line-height: 24px;left: 85px;min-height:50px;position: absolute;top:72px;}
+.state .wine p a{padding: 10px 10px;font-size: 14px;}
+.winertwo{width: 520px;min-height: 100px;overflow: hidden;text-align: left;position: relative;float: right;}
+.winertwo h3{border-bottom: 1px solid #eee;font-weight: 700;text-align: left;margin-bottom: 15px;font-size: 14px;margin-top: 16px;margin-left: 34px;}
+.winertwo i{font-size: 22px;margin-left: 25px;}
+.food{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.fooder{background: white;width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px 45px;}
+.fooder p{float: left;margin-right:50px; }
+.fooder p i{font-size: 50px;}
+.find{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.finder{width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px;padding-left: 490px;background: white;}
+.finder p{float: left;margin-right:50px; }
+.finder p i{font-size: 50px;}
+.brand{display: none; position: absolute;min-height: 100px;width: 100%;left: 0px;margin-top: 2px;}
+.brander{background: white;width: 100%;min-height: 150px;margin: 0 auto;box-sizing: border-box;padding: 25px;padding-left: 650px;}
+.brander p{float: left;margin-right:50px; }
+.brander p i{font-size: 50px;}
+.float{width: 70px;position: fixed;right: 0px;bottom: 50px;z-index:333;background:snow;}
+.float div{height: 70px;box-sizing: border-box;border: 1px solid #333;text-align: center;}
+.float div img{width: 100%;height: 100%;}
+.float div i{font-size: 24px;line-height: 40px;}
+.float div span{font-size: 14px;}
+.float div:nth-child(5){display: none;}
+.track-wine{padding-bottom: 10px;} 
+.tracker{width: 100%;height: 450px;position: relative;}
+.tracker .ban img{width: 100%;height: 100%;position: absolute;}
+.item{display: none; overflow: hidden;  width: 100%;height:80px;position: absolute;bottom: 0px;background:rgba(20, 20, 20,0.5);box-sizing: border-box;padding-left: 17px}
+.item img{width: 153px;height: 66px;margin-right: 7px;float: left;margin-top:7px;}
+.item a div{z-index: 888;width: 153px;height: 66px;background:rgba(20, 20, 20,0.5);position: absolute;margin-top: 7px;}
+.item a .act {background: transparent;}
+.home{width: 100%;}
+.track-wine .home-wine span{font-size: 14px;}
+.home-banner{height: 45px;}
+.maxmain{width: 1120px;margin: 0 auto;min-height: 420px;}
+.maxmain h2{height: 30px;font-size: 24px; margin: 20px 0 10px;line-height: 30px;}
+.maxmain h2 span{font-size: 14px;color: #999;margin-left: 10px;}
+.live{width: 1140px;min-height: 420px;position: relative;left: -8px;overflow: hidden;}
+.prevl{color: #e4e1dd;font-size: 36px;position: absolute;top: 120px;cursor: pointer;background: rgba(20, 20, 20,0.5);z-index: 10;left: 10px;}
+.prevr{color: #e4e1dd;font-size: 36px;position: absolute;top: 120px;right: 0px;cursor: pointer;background: rgba(20, 20, 20,0.5);z-index: 10;right: 10px;}
+.lists{min-height: 420px;position: absolute;left:0px;}
+.lists li {width: 265px;float: left;margin: 10px;text-align: center;background: #fff;}
+.lists li img{width: 265px;cursor: pointer;}
+.lists li h3{margin: 10px 10px 5px;font-size: 14px;    display: block;line-height: 24px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.lists li h4{height: 21px;color: #999;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;font-size: 14px;}
+.lists li h5{font-weight: 400;color: #d92a4b;font-size: 14px;margin: 15px auto;border-top: 1px solid #eee;width: 60%;padding-top: 10px;}
+.lists .set{box-shadow:0 0 10px #ccc;}
+.big{width: 265px;display: block;height: 265px;overflow: hidden;}
+.breed{background: #f4f4f4;}
+.home-wine{overflow: hidden;margin-top: 10px;}
+.home-wine h2{float: left;height: 30px;font-size: 24px;margin: 20px 0 10px;line-height: 30px;}
+.home-wine span{font-size: 16px;color: #999;margin-left: 10px;}
+.home-wine ul{float: right;margin: 35px 0 10px;}
+.home-wine ul li{cursor: pointer;margin-left: 15px;padding-bottom: 5px;line-height: 18px;float: left;font-size: 14px;color:#333;}
+.home-wine .action-tab .activetwo{color: #d92a4b;border-bottom: 2px solid #d92a4b;}
+.js-tab>div{overflow: hidden;width: 100%;display: none;}
+.breed .js-tab .shower{display: block;}
+.breed .js-tab .shower ul li h3{font-size: 14px}
+.breed .js-tab .shower ul li h4{font-size: 14px}
+.js-t div ul li h3 .red{color:#d92a4b; }
+.js-t div ul li div{width: 256px;height: 256px;overflow: hidden;}
+.js-t div ul li div a img{transition: all 2s;}
+.js-t div ul li div a img:hover{transform: scale(1.1)}
+.more{width: 138px;height: 50px;border: 1px solid #999;margin: 30px auto;}
+.more a{width: 138px;line-height: 50px;background: #fff;color: #666;border: 1px solid #999;display: block;margin: -5px;text-align: center;}
+.b-play{ cursor: pointer; background: url(../img/e1.jpg) no-repeat;background-size:100% 100%; position: relative;display: block;text-align: center;width: 360px;height: 220px;}
+.b-play img{width:100%; height:220px;}
+.shade{display: none; width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 666;background: rgba(0,0,0,.7);}
+.ly-close{z-index: 9;    width: 21px;height: 21px;line-height: 19px;border-radius: 10px;position: absolute;right: 10px;top: 10px;font-size: 23px;color: #ddd;cursor: pointer;text-align: center;font-weight: lighter;}
+.js-play{width: 100%;min-height: 576px;position: absolute;top: 30px;left: 60px;}
+.clicke dl{float: left; display: block;width: 360px;margin: 6px;height: 100%;}
+.videos p{color: white; position: absolute;top:0;left: 0;right: 0;bottom: 0;margin: auto;width: 60px;height: 60px;border-radius: 15px;font-size: 30px;z-index: 5;border: 1px solid white;line-height: 60px;}
+.clicke{overflow: hidden;}
+.b-playb{background: url(../img/e2.jpg) no-repeat;background-size:100% 100%;}
+.b-playc{background: url(../img/e3.jpg) no-repeat;background-size:100% 100%;}
+.videos h2{color: #333; margin: 0;font-size: 18px;padding: 10px 20px;height: 30px;line-height: 30px;font-weight: 400;}
+.clicke dl .a-btn{font-size: 14px; width: 180px;background: #f9f9f9;color: #999; border-radius: 0;float: left;text-align: center;line-height: 40px;cursor: pointer;}
+.fr {float: right!important;display: inline-block;font-size: 14px;}
+.clicke dl span{display: block;padding: 0 20px;height: 88px;color: #999!important;font-size: 14px;}
+.js-tab .shower .rice:nth-child(1){min-width: 550px;}
+.js-tab .shower .rice{text-align: left;margin: 9px;}
+.js-tab .shower .rice div{width: 100%;}
+.js-tab .shower .rice h3 a{font-size: 20px;line-height: 40px!important;margin-top: 10px;}
+.js-tab .shower .rice img{width: 100%;}
+.js-tab .shower .rice h4 {line-height: 20px;height: 42px;color: #999;font-size: 14px;}
+.js-tab .shower .rice h4 em{line-height: 34px;margin-left: 44px;color: #666;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: block;font-size: 14px;}
+.foot{    background: #fff;clear: both;border-top: 1px solid #eee;}
+.foot-link{padding: 36px 0;overflow: hidden;border-bottom: 1px solid #eee;}
+.foot-link dl {float: left;margin-right: 70px;}
+.foot-link dl dt {border-bottom: 1px solid #eee;padding-bottom: 8px;width: 58px;margin-bottom: 5px;}
+.foot-link dl dt {font-size: 14px;}
+.foot-link a {color: #333;text-decoration: none;cursor: pointer;font-size: 14px;}
+.foot-link .fr{float: right!important;display: inline-block;}
+.foot-link dl dd a {line-height: 30px;color: #999;}
+.foot-link dl dt {border-bottom: 1px solid #eee;padding-bottom: 8px;width: 58px;margin-bottom: 5px;}
+.f14 {font-size: 14px!important;}
+.foot-link ul h2 {margin: 10px 0 16px;font: 400 28px Arial;color: #999;}
+.colorL {color: #666!important;}
+.foot-link ul li {float: left;}
+.foot-link ul img {display: block;margin: 10px auto;}
+.page-footer {background: #000; width: 100%;clear: both;border-bottom: 1px solid #1d1d1d;position: relative;}
+.ft{padding-bottom: 30px;}
+.home-ico {height: 56px;line-height: 56px;padding: 30px 0;color: #fff;font-size: 16px;}
+.home-ico li {float: left;width: 33%;}
+.home-ico li i {font-size: 60px;margin: 0 10px 0 108px;}
+.page-footer .inner-wrap {text-align: center;line-height: 24px;padding: 10px 0;width: 1120px;margin: 0 auto;}
+.net-copyright {color: #999;padding: 20px 0;text-align: center;}
+.net-copyright .links {margin-bottom: 6px;}
+.net-copyright .links a {margin: 0 4px;}
+.net-copyright a {color: #999;}
+.net-copyright p {margin-bottom: 6px;}
+.net-copyright .gov-icons {margin-top: 20px;}
+.net-copyright .gov-icons .police {background-position: 0 -120px;}
+.net-copyright .gov-icons a {display: inline-block;width: 34px;height: 34px;background: url(../img/ico-safe.png);}
+.net-copyright .gov-icons .aw {background-position: 0 0;}
+.net-copyright .gov-icons .icp {background-position: 0 -80px;}
+.net-copyright .gov-icons .gswj {background-position: 0 -40px;}
+.inner-wrap .net-copyright .maincont{font-size: 14px;}
+.gov-icons{position: absolute;top: 61px;left: 486px;}

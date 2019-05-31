@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    img {
+        display: block
+    }
+
+    section {
+        width: 400px;
+        height: 400px;
+        background: #d00;
+        position: relative;
+        margin: 100px 0 0 200px;
+    }
+
+    section>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btnBox {
+        width: 400px;
+        height: 100px;
+        margin-left: 200px;
+    }
+
+    .sImgBox {
+        height: 100px;
+    }
+
+    .sImgBox li {
+        width: 80px;
+        height: 80px;
+        border: 10px solid pink;
+        float: left;
+    }
+
+    .sImgBox li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .glass {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: -400px;
+        top: 0;
+        overflow: hidden;
+        display: none;
+    }
+
+    .glass img {
+        width: 800px;
+        height: 800px;
+        position: absolute
+    }
+
+    .shade {
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 0, 0, .6);
+        position: absolute;
+        top: 0;
+        cursor: move;
+        display: none;
+    }
+</style>
+
+<body>
+
+</body>
+
+</html>
+<script src="./chajian/jquery-1.11.3.min.js"></script>
+<script>
+    var ip = location.href.split("?")[1].split('=')[1];
+    document.body.innerHTML = `<section class="show">
+        <img src="img/${ip}1.jpg" alt="">
+        <aside class="glass">
+            <img src="img/${ip}1.jpg" alt="">
+        </aside>
+        <div class="shade"></div>
+    </section>
+    <div class="btnBox">
+        <ul class="sImgBox">
+            <li><img src="img/${ip}1.jpg" alt=""></li>
+            <li><img src="img/${ip}2.jpg" alt=""></li>
+            <li><img src="img/${ip}3.jpg" alt=""></li>
+            <li><img src="img/${ip}4.jpg" alt=""></li>
+        </ul>
+    </div>`
+    var 
+        osImgBox = document.querySelector('.sImgBox'),
+        osImgBoxLi = document.querySelectorAll('.sImgBox li'),
+        oShowImg = document.querySelector('.show>img'),
+        oGlass = document.querySelector('.glass'),
+        oGlassImg = oGlass.querySelector('img'),
+        oShow = document.querySelector('.show'),
+        oShade = document.querySelector('.shade');
+    oShow.onmousemove = function(e){
+        e = e || window.event;
+        var l = e.clientX - this.offsetLeft - oShade.offsetWidth / 2;
+        var t = e.clientY - this.offsetTop - oShade.offsetHeight / 2;
+        l = l < 0 ? 0 : (l > 200 ? 200 : l);
+        t = t < 0 ? 0 : (t > 200 ? 200 : t);
+        oShade.style.left = l + 'px';
+        oShade.style.top = t + 'px';
+        oGlassImg.style.left = - l * 2 + 'px';
+        oGlassImg.style.top = - t * 2 + 'px';
+        oShade.style.display = "block"
+        oGlass.style.display = "block"
+    }
+    oShow.onmouseout =function(){
+        oShade.style.display = "none"
+        oGlass.style.display = "none"
+    }
+   for(var i = 0;i < osImgBoxLi.length;i++){
+    osImgBoxLi[i].onmouseover = function(){
+        oShowImg.src = this.firstElementChild.src;
+        oGlassImg.src = this.firstElementChild.src;
+    }
+   }
+</script>

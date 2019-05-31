@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #list {
+            width: 800px;
+            text-align: center;
+            border-spacing: 0;
+            table-layout: fixed;
+            margin: 30px auto;
+        }
+
+        #list>tbody>tr {
+            border: 1px solid #ccc;
+            background: #f3b8b8;
+            height: 87px;
+        }
+
+        #list>tbody>tr>td {
+            margin-left: 30px;
+            width: 20%;
+        }
+
+        #list>tbody>tr>td>button {
+            height: 22px;
+            width: 30px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        #list>tbody>tr>td>button,
+        #list>tbody>tr>td>input {
+            border: 0;
+            float: left;
+        }
+
+        .reduce {
+            margin-left: 30px;
+            display: inline-block;
+        }
+
+        .num {
+            width: 40px;
+            text-align: center;
+            display: inline-block;
+        }
+        .add{
+            display: inline-block;
+        }
+        #list>tbody>tr>td>input {
+            width: 40px;
+            height: 20px;
+        }
+
+        .smallPic {
+            width: 35px;
+            height: 35px;
+        }
+        .wine{
+            background: #f3b8b8;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="list">
+        <tr>
+            <td>图片</td>
+            <td>单价</td>
+            <td>数量</td>
+            <td>小计</td>
+            <td>操作</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<script src="./chajian/jquery-1.11.3.min.js"></script>
+<script src="./chajian/chajian/cookie.js"></script>
+<script>
+    $.ajax({
+        type: 'get',
+        url: 'js/buy.json',
+        data: {},
+        dataType: 'json',
+        success: function (data) {
+            var str = "";
+            var get = JSON.parse(getCookie('buy'))
+           
+            for (key in get) {           
+            for (var i = 0; i < data.length; i++) {
+                if(key == data[i].id){
+                str += `
+                <tr class="wine">
+                    <td><img src="${data[i].img}" class="smallPic"></td>
+                    <td>￥${data[i].price}</td>
+                    <td>
+                         <button class="reduce">-</button>
+                        <input type="text" value="${get[key]}" class="num">
+                        <button class="add">+</button>
+                    </td>
+                    <td>￥${data[i].price * get[key]}</td>
+                    <td class="del">删除</td>
+                </tr>
+                `
+            }
+        }
+        }
+            $('#list').append(str);
+             $('.del').on('click',function(){
+                 $(this).parent().remove()
+            })
+             $('.add').on('click',function(){
+             var ad = $(this).prev().val();            
+             var bd = Number(ad)
+             bd += 1;
+             $(this).prev().val(bd);
+             var cp = $(this).parent().prev().html()
+             var cp2 =Number(cp.slice(1))
+            $(this).parent().next().html(`￥${bd * cp2}`)
+            })
+            $('.reduce').on('click',function(){
+             var ad = $(this).next().val();            
+             var cd = Number(ad)
+             cd -= 1;
+             if(cd <= 0){
+                 cd = 0
+             }
+             $(this).next().val(cd);
+             var p = $(this).parent().prev().html()
+             var p2 =Number(p.slice(1))
+            $(this).parent().next().html(`￥${cd * p2}`)
+            })
+        }
+    })
+   
+</script>
